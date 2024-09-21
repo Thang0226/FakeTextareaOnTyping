@@ -12,8 +12,6 @@
         text-align: center;
       }
       textarea {
-        width: 400px;
-        height: 250px;
         font-size: larger;
       }
     </style>
@@ -22,7 +20,12 @@
   <body>
     <div>
       <h2>Type anything slowly</h2>
-      <textarea id="texting" oninput="generate_text()"></textarea>
+      <textarea
+        id="texting"
+        oninput="generate_text()"
+        rows="10"
+        cols="40"
+      ></textarea>
     </div>
 
     <script src="fake_typing.js"></script>
